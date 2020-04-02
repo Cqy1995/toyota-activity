@@ -11,14 +11,46 @@
 
 <body>
     <div id="bill">
-        <div class="alertBox">
-            <img class="alertBox-a" src="./img/gbox.png" alt="" srcset="">
-            <div class="alertBox-b">
-                <p>恭喜您</p>
-                <p>作业以完成</p>
+        <div class="billbig">
+            <img class="billImg" src="./img/billtop.png" alt="">
+            <hr />
+            <div class="billBox">
+                <div class="billBoxTop">
+                    <img src="./img/billact.png" alt="">
+                    <span>微信名称</span>
+                </div>
+
+                <p>
+                    假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字。
+                </p>
+
+            </div>
+            <div class="billSave">
+                长按图片保存，分享到朋友圈
             </div>
         </div>
+        
     </div>
+	<div id="phone">
+		
+	</div>
+	<div class="alertBox">
+	    <img class="alertBox-a" src="./img/gbox.png" alt="" srcset="">
+	    <div class="alertBox-b">
+	        <p>恭喜您</p>
+	        <p>作业以完成</p>
+	    </div>
+	</div>
+	<script src="./js/jquery.min.js"></script>
+     <script src="./js/html2canvas.min.js"></script>
+    <script>
+		window.onload = function(){	   
+		  html2canvas(document.querySelector("#bill")).then(canvas => {
+		      document.getElementById("phone").appendChild(canvas)
+		  });
+		}
+		  
+    </script>
 </body>
 
 </html>

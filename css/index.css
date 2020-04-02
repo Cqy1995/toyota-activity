@@ -1,693 +1,759 @@
 /* 加载 */
 
 #Load {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
+	height: 100%;
+	background: url("../img/loading.png") no-repeat;
+	background-size: 100%;
 }
 
 #Load img {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 #Load p {
-    position: absolute;
-    width: 100%;
-    top: 4.8rem;
-    font-size: 0.4rem;
-    color: #ffffff;
-    text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 4.8rem;
+	font-size: 0.4rem;
+	color: #ffffff;
+	text-align: center;
 }
 
 
 /* 开屏 */
 
 #start {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
-    position: relative;
+	height: 100%;
+	background: url("../img/loading.png") no-repeat;
+	background-size: 100%;
+	position: relative;
 }
 
 #startBox {
-    position: absolute;
-    top: 5.4rem;
-    position: absolute;
-    left: 50%;
-    margin-left: -1.675rem;
+	position: absolute;
+	top: 5.4rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -1.675rem;
 }
 
 .startBtn {
-    display: block;
-    width: 3.35rem;
-    height: 0.8rem;
-    text-align: center;
-    background: #113f42;
-    border: 4px solid #ffffff;
-    border-radius: 12px;
-    margin-top: 0.5rem;
-    color: #ffffff;
-    font-size: 0.4rem;
+	display: block;
+	width: 3.35rem;
+	height: 0.8rem;
+	text-align: center;
+	background: #113f42;
+	border: 4px solid #ffffff;
+	border-radius: 12px;
+	margin-top: 0.5rem;
+	color: #ffffff;
+	font-size: 0.4rem;
 }
 
 .startAudLogo {
-    display: block;
-    width: 0.6rem;
-    height: 0.4rem;
-    background: red;
-    position: absolute;
-    right: 0.35rem;
-    top: 1.26rem;
+	display: block;
+	width: 0.6rem;
+	height: 0.4rem;
+	position: absolute;
+	right: 0.35rem;
+	top: 1.26rem;
 }
 
 .startAud {
-    display: none;
+	display: none;
 }
 
 
 /* 弹框 */
 
 #startRule {
-    width: 6.5rem;
-    height: 7.6rem;
-    background: #ffffff;
-    position: absolute;
-    top: 2.2rem;
-    left: 50%;
-    margin-left: -3.25rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #333;
-    display: none;
+	width: 6.5rem;
+	height: 7.6rem;
+	background: #ffffff;
+	position: absolute;
+	top: 2.2rem;
+	left: 50%;
+	margin-left: -3.25rem;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px #333;
+	display: none;
 }
 
 .startRuleBox {
-    background: #dbe3e4;
+	background: #dbe3e4;
 }
 
 .startImg {
-    position: absolute;
-    width: 0.7rem;
-    right: -0.25rem;
-    top: -0.25rem;
+	position: absolute;
+	width: 0.7rem;
+	right: -0.25rem;
+	top: -0.25rem;
 }
 
 .startRule-a {
-    width: 6.32rem;
-    padding: 0.2rem 0;
-    border-radius: 10px;
-    background: #103d40;
-    margin: 0.1rem auto;
+	width: 6.32rem;
+	padding: 0.2rem 0;
+	border-radius: 10px;
+	background: #103d40;
+	margin: 0.1rem auto;
 }
 
 .startRule-a h3 {
-    font-size: 0.4rem;
-    text-align: center;
-    color: #ffffff;
+	font-size: 0.4rem;
+	text-align: center;
+	color: #ffffff;
 }
 
 .startRule-b {
-    margin-top: 0.8rem;
+	margin-top: 0.8rem;
 }
 
 .startRule-b-a {
-    margin-bottom: 0.28rem;
+	margin-bottom: 0.28rem;
 }
 
 .startRule-b-b {
-    padding-bottom: 0.9rem;
+	padding-bottom: 0.9rem;
 }
 
 .startRule-b-a h3,
 .startRule-b-b h3 {
-    font-size: 0.25rem;
-    text-align: center;
-    color: #093335;
-    margin-bottom: 0.15rem;
+	font-size: 0.25rem;
+	text-align: center;
+	color: #093335;
+	margin-bottom: 0.15rem;
 }
 
 .startLinea {
-    display: inline-block;
-    width: 2px;
-    height: 0.25rem;
-    background: #0a3335;
-    margin-right: 0.18rem;
+	display: inline-block;
+	width: 2px;
+	height: 0.25rem;
+	background: #0a3335;
+	margin-right: 0.18rem;
 }
 
 .startLineb {
-    display: inline-block;
-    width: 2px;
-    height: 0.25rem;
-    background: #0a3335;
-    margin-left: 0.18rem;
+	display: inline-block;
+	width: 2px;
+	height: 0.25rem;
+	background: #0a3335;
+	margin-left: 0.18rem;
 }
 
 .startRule-b-a p,
 .startRule-b-b p {
-    font-size: 0.2rem;
-    color: #595757;
-    text-align: center;
+	font-size: 0.2rem;
+	color: #595757;
+	text-align: center;
 }
 
 .startRule-b-c {
-    padding-bottom: 0.75rem;
+	padding-bottom: 0.75rem;
 }
 
 .startRule-b-c h3 {
-    font-size: 0.25rem;
-    color: #0c3638;
-    font-size: 0.25rem;
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 0.1rem;
+	font-size: 0.25rem;
+	color: #0c3638;
+	font-size: 0.25rem;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 0.1rem;
 }
 
 
 /* 信息 */
 
 #formList {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
-    position: relative;
+	height: 100%;
+	background: url("../img/loading.png") no-repeat;
+	background-size: 100%;
 }
 
 #formList>h2 {
-    font-size: 0.98rem;
-    text-align: center;
-    color: #ffffff;
-    padding-top: 2.2rem;
-    margin-bottom: 1.2rem;
+	font-size: 0.98rem;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 2.2rem;
+	margin-bottom: 1.2rem;
 }
 
 .formListBox {
-    width: 5.55rem;
-    margin: 0.3rem auto;
-    text-align: center;
-    overflow: hidden;
+	width: 5.55rem;
+	margin: 0.3rem auto;
+	text-align: center;
+	overflow: hidden;
 }
 
 .formListBox>label {
-    float: left;
-    width: 0.9rem;
-    text-align: right;
-    color: #ffffff;
-    font-size: 0.4rem;
-    margin-right: 0.28rem;
-    margin-bottom: 0.8rem;
+	float: left;
+	width: 0.9rem;
+	text-align: right;
+	color: #ffffff;
+	font-size: 0.4rem;
+	margin-right: 0.28rem;
+	margin-bottom: 0.8rem;
 }
 
 .formListBox>select,
 .formListBox option {
-    float: left;
-    width: 3.8rem;
-    height: 0.65rem;
-    border: 4px solid #ffffff;
-    font-size: 0.32rem;
-    padding-left: 0.15rem;
-    background: #0b3537;
-    color: #5ca2a7;
-    border-radius: 10px;
+	float: left;
+	width: 3.8rem;
+	height: 0.65rem;
+	border: 4px solid #ffffff;
+	font-size: 0.32rem;
+	padding-left: 0.15rem;
+	background: #0b3537;
+	color: #5ca2a7;
+	border-radius: 10px;
 }
 
 .formListBox input {
-    float: left;
-    width: 3.5rem;
-    height: 0.65rem;
-    border: 4px solid #ffffff;
-    font-size: 0.32rem;
-    padding-left: 0.15rem;
-    background: #0b3537;
-    color: #5ca2a7;
-    border-radius: 10px;
+	float: left;
+	width: 3.5rem;
+	height: 0.65rem;
+	border: 4px solid #ffffff;
+	font-size: 0.32rem;
+	padding-left: 0.15rem;
+	background: #0b3537;
+	color: #5ca2a7;
+	border-radius: 10px;
 }
 
 .formBtn {
-    display: block;
-    width: 3.35rem;
-    height: 0.8rem;
-    background: #103e40;
-    color: #ffffff;
-    font-size: 0.4rem;
-    border: 4px solid #ffffff;
-    border-radius: 10px;
-    margin: 0.5rem auto;
+	display: block;
+	width: 3.35rem;
+	height: 0.8rem;
+	background: #103e40;
+	color: #ffffff;
+	font-size: 0.4rem;
+	border: 4px solid #ffffff;
+	border-radius: 10px;
+	margin: 0.5rem auto;
 }
 
 
 /* 作业完成排名 */
 
 #workwc {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
-    position: relative;
-    overflow: hidden;
+	height: 100%;
+	background: url("../img/loading.png") no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 .workwcImg {
-    display: block;
-    margin: 1.7rem auto;
-    margin-bottom: 0.5rem;
+	display: block;
+	margin: 1.7rem auto;
+	margin-bottom: 0.5rem;
 }
 
 .workwcBox {
-    width: 6.8rem;
-    margin: 0 auto;
-    clear: both;
+	width: 6.8rem;
+	margin: 0 auto;
+	clear: both;
 }
 
 .red {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
 }
 
 .workwcBox-a,
 .workwcBox-b {
-    float: left;
-    font-size: 0.28rem;
-    color: #ffffff;
-    margin-bottom: 0.4rem;
+	float: left;
+	font-size: 0.28rem;
+	color: #ffffff;
+	margin-bottom: 0.4rem;
 }
 
 #workwcImg {
-    clear: both;
-    display: block;
-    width: 0.22rem;
-    height: 0.24rem;
-    margin: 0 auto;
-    margin-bottom: 0.4rem;
+	clear: both;
+	display: block;
+	width: 0.22rem;
+	height: 0.24rem;
+	margin: 0 auto;
+	margin-bottom: 0.4rem;
 }
 
 #startWork {
-    display: block;
-    width: 3.35rem;
-    height: 0.65rem;
-    background: #103f42;
-    color: #ffffff;
-    margin: 0 auto;
-    font-size: 0.4rem;
-    border-radius: 10px;
-    border: 4px solid #ffffff;
-    box-shadow: 10px 10px 10px #333333;
+	display: block;
+	width: 3.35rem;
+	height: 0.65rem;
+	background: #103f42;
+	color: #ffffff;
+	margin: 0 auto;
+	font-size: 0.4rem;
+	border-radius: 10px;
+	border: 4px solid #ffffff;
+	box-shadow: 10px 10px 10px #333333;
 }
 
 
 /* 大咖讲话 */
 
 #bigman {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
-    position: relative;
-    overflow: auto;
+	height: 100%;
+	background: url("../img/loading.png") no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow: auto;
 }
 
 #bigmanImg {
-    display: block;
-    width: 3.7rem;
-    margin: 0 auto;
-    padding-top: 1.65rem;
+	display: block;
+	width: 3.7rem;
+	margin: 0 auto;
+	padding-top: 1.65rem;
 }
 
 .bigmanBox {
-    width: 6rem;
-    overflow: hidden;
-    background: #ffffff;
-    margin: 0.68rem auto;
-    padding: 0.58rem 0.35rem;
+	width: 6rem;
+	overflow: hidden;
+	background: #ffffff;
+	margin: 0.68rem auto;
+	padding: 0.58rem 0.35rem;
 }
 
 .bigmanBox h2 {
-    font-size: 0.42rem;
-    color: #0f4548;
-    text-align: center;
-    margin-top: 0.48rem;
+	font-size: 0.42rem;
+	color: #0f4548;
+	text-align: center;
+	margin-top: 0.48rem;
 }
 
 .bigmanBox-a {
-    overflow: hidden;
-    margin-top: 0.58rem;
-    margin-bottom: 0.6rem;
+	overflow: hidden;
+	margin-top: 0.58rem;
+	margin-bottom: 0.6rem;
 }
 
 .bigmanBox-aImg {
-    float: left;
-    width: 1.48rem;
-    height: 1.55rem;
+	float: left;
+	width: 1.48rem;
+	height: 1.55rem;
 }
 
 .bigmanBox-aBox {
-    float: left;
-    margin-left: 0.45rem;
+	float: left;
+	margin-left: 0.45rem;
 }
 
 .bigmanBox-aBox h3 {
-    font-size: 0.25rem;
-    color: #595757;
-    margin-top: 0.1rem;
+	font-size: 0.25rem;
+	color: #595757;
+	margin-top: 0.1rem;
 }
 
 .bigmanBox-aBox span {
-    display: block;
-    font-size: 0.25rem;
-    color: #595757;
-    margin-top: 0.1rem;
+	display: block;
+	font-size: 0.25rem;
+	color: #595757;
+	margin-top: 0.1rem;
 }
 
 .bigmanBox-aBox img {
-    display: block;
-    width: 1.62rem;
-    height: 0.5rem;
-    margin-top: 0.15rem;
+	display: block;
+	width: 1.62rem;
+	height: 0.5rem;
+	margin-top: 0.15rem;
 }
 
 .bigmanBl {
-    clear: both;
-    font-size: 0.2rem;
-    color: #595757;
-    line-height: 0.4rem;
-    margin-bottom: 0.12rem;
+	clear: both;
+	font-size: 0.2rem;
+	color: #595757;
+	line-height: 0.4rem;
+	margin-bottom: 0.12rem;
 }
 
 #todown {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
-    position: relative;
-    overflow: auto;
+	height: 100%;
+	background: url("../img/loading.png") no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow: auto;
 }
 
 #todownImg {
-    display: block;
-    width: 3.7rem;
-    margin: 0 auto;
-    padding-top: 1.65rem;
+	display: block;
+	width: 3.7rem;
+	margin: 0 auto;
+	padding-top: 1.65rem;
 }
 
 #todownBox {
-    margin-top: 0.75rem;
-    text-align: center;
+	margin-top: 0.75rem;
+	text-align: center;
 }
 
 #todownBox img {
-    width: 6.4rem;
-    margin-bottom: 0.15rem;
+	width: 6.4rem;
+	margin-bottom: 0.15rem;
 }
 
 
 /* 顾客声音 */
 
 #curaudio {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
-    position: relative;
-    overflow: auto;
+	height: 100%;
+	background: url("../img/loading.png") no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow: auto;
 }
 
 #curaudioImg {
-    display: block;
-    width: 6.35rem;
-    margin: 0 auto;
-    margin-top: 1.7rem;
-    margin-bottom: 0.55rem;
+	display: block;
+	width: 6.35rem;
+	margin: 0 auto;
+	margin-top: 1.7rem;
+	margin-bottom: 0.55rem;
 }
 
 .curaudioBox {
-    width: 6rem;
-    background: #ffffff;
-    padding: 0 0.25rem;
-    margin: 0 auto;
-    margin-bottom: 0.4rem;
+	width: 6rem;
+	background: #ffffff;
+	padding: 0 0.25rem;
+	margin: 0 auto;
+	margin-bottom: 0.4rem;
 }
 
 .curaudioBoxTop {
-    overflow: auto;
+	overflow: auto;
 }
 
 .curaudioBoxTop p {
-    float: left;
-    ;
-    font-size: 0.25rem;
-    color: #595757;
-    line-height: 0.75rem;
+	float: left;
+	;
+	font-size: 0.25rem;
+	color: #595757;
+	line-height: 0.75rem;
 }
 
 .curaudioBox button {
-    float: right;
-    width: 1.15rem;
-    height: 0.55rem;
-    line-height: 0.45rem;
-    border: 2px solid #b80000;
-    background: #ffffff;
-    color: #b80000;
-    font-size: 0.3rem;
-    text-align: center;
-    margin-top: 0.1rem;
+	float: right;
+	width: 1.15rem;
+	height: 0.55rem;
+	line-height: 0.45rem;
+	border: 2px solid #b80000;
+	background: #ffffff;
+	color: #b80000;
+	font-size: 0.3rem;
+	text-align: center;
+	margin-top: 0.1rem;
 }
 
 .curaudioTit {
-    font-size: 0.42rem;
-    height: 0.6rem;
-    text-align: center;
-    background: #0f4548;
-    color: #ffffff;
+	font-size: 0.42rem;
+	height: 0.6rem;
+	text-align: center;
+	background: #0f4548;
+	color: #ffffff;
 }
 
 .curaudioBoxBtm {
-    overflow: hidden;
-    margin-top: 0.1rem;
+	overflow: hidden;
+	margin-top: 0.1rem;
 }
 
 .curaudioBoxBtm h3 {
-    float: left;
-    width: 0.4rem;
-    background: #5ca2a7;
-    font-size: 0.32rem;
-    text-align: center;
-    padding: 0.68rem 0;
-    color: #ffffff;
+	float: left;
+	width: 0.4rem;
+	background: #5ca2a7;
+	font-size: 0.32rem;
+	text-align: center;
+	padding: 0.68rem 0;
+	color: #ffffff;
 }
 
 .curaudioBoxBtm-a {
-    float: left;
-    margin-left: 0.35rem;
-    width: 5.2rem;
+	float: left;
+	margin-left: 0.35rem;
+	width: 5.2rem;
 }
 
 .curaudioBoxBtm-a p:first-child {
-    margin-top: 0.15rem;
+	margin-top: 0.15rem;
 }
 
 .curaudioBoxBtm-a p {
-    font-size: 0.2rem;
-    color: #595757;
-    margin-bottom: 0.2rem;
+	font-size: 0.2rem;
+	color: #595757;
+	margin-bottom: 0.2rem;
 }
 
 .Hline {
-    background: #0f4548;
-    height: 2px;
-    margin: 0.08rem auto;
+	background: #0f4548;
+	height: 2px;
+	margin: 0.08rem auto;
 }
 
 .curaudioBoxBtm2 {
-    overflow: hidden;
-    margin-top: 0.1rem;
+	overflow: hidden;
+	margin-top: 0.1rem;
 }
 
 .curaudioBoxBtm2 h3 {
-    float: left;
-    width: 0.4rem;
-    background: #5ca2a7;
-    font-size: 0.32rem;
-    text-align: center;
-    padding: 0.2rem 0;
-    color: #ffffff;
-    margin-bottom: 0.12rem;
+	float: left;
+	width: 0.4rem;
+	background: #5ca2a7;
+	font-size: 0.32rem;
+	text-align: center;
+	padding: 0.2rem 0;
+	color: #ffffff;
+	margin-bottom: 0.12rem;
 }
 
 .curaudioBoxBtm2-a {
-    float: left;
-    margin-left: 0.35rem;
-    width: 5.2rem;
+	float: left;
+	margin-left: 0.35rem;
+	width: 5.2rem;
 }
 
 .curaudioBoxBtm2-a p {
-    font-size: 0.2rem;
-    color: #595757;
-    margin-top: 0.55rem;
+	font-size: 0.2rem;
+	color: #595757;
+	margin-top: 0.55rem;
 }
 
 
 /* 视频 */
 
 #yqVideo {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
-    position: relative;
-    overflow: auto;
+	height: 100%;
+	background: url("../img/loading.png") no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow: auto;
 }
 
 #yqVideoImg {
-    display: block;
-    width: 6.35rem;
-    margin: 0 auto;
-    margin-top: 1.7rem;
-    margin-bottom: 0.55rem;
+	display: block;
+	width: 6.35rem;
+	margin: 0 auto;
+	margin-top: 1.7rem;
+	margin-bottom: 0.55rem;
 }
 
 .yqVideoList {
-    width: 6.45rem;
-    height: 3.65rem;
-    background: #ffffff;
-    margin: 0.55rem auto;
+	width: 6.45rem;
+	height: 3.65rem;
+	background: #ffffff;
+	margin: 0.55rem auto;
+	overflow: hidden;
 }
 
 
 /* 调查问卷 */
 
 #dcwj {
-    height: 100%;
-    background: url("../img/bg2.png") no-repeat;
-    background-size: 100%;
-    position: relative;
-    overflow: auto;
+	height: 100%;
+	background: url("../img/bg2.png") no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow: auto;
 }
 
 #dcwjImg {
-    display: block;
-    width: 6.35rem;
-    margin: 0 auto;
-    margin-top: 1.7rem;
-    margin-bottom: 0.55rem;
+	display: block;
+	width: 6.35rem;
+	margin: 0 auto;
+	margin-top: 1.7rem;
+	margin-bottom: 0.55rem;
 }
 
 #dcwjBox {
-    width: 6.45rem;
-    font-size: 0.2rem;
-    color: #8db4b7;
-    line-height: 0.35rem;
-    margin: 0 auto;
-    margin-bottom: 0.85rem;
+	width: 6.45rem;
+	font-size: 0.2rem;
+	color: #8db4b7;
+	line-height: 0.35rem;
+	margin: 0 auto;
+	margin-bottom: 0.85rem;
 }
 
 .dcwjBoxMain {
-    width: 6.45rem;
-    margin: 0 auto;
-    margin-top: 0.65rem;
+	width: 6.45rem;
+	margin: 0 auto;
+	margin-top: 0.65rem;
 }
 
 .dcwjBoxMain-a {
-    font-size: 0.25rem;
-    color: #ffffff;
-    margin-bottom: 0.3rem;
+	font-size: 0.25rem;
+	color: #ffffff;
+	margin-bottom: 0.3rem;
 }
 
 .dcwjBoxMain-b {
-    font-size: 0;
-    height: 0.6rem;
-    line-height: 0.6rem;
+	font-size: 0;
+	height: 0.6rem;
+	line-height: 0.6rem;
 }
-.dcwjBoxMain-b >.ui-radio{
-    display: inline-block;
+
+.dcwjBoxMain-b>.ui-radio {
+	display: inline-block;
 }
+
 .dcwjBoxMain-b input {
-    vertical-align: sub;
+	vertical-align: sub;
 }
 
 .dcwjBoxMain-b span {
-    font-size: 0.25rem;
-    margin-left: 0.14rem;
-    color: #ffffff;
+	font-size: 0.25rem;
+	margin-left: 0.14rem;
+	color: #ffffff;
 }
 
 #dcwjBtn {
-    display: block;
-    width: 3.32rem;
-    height: 0.8rem;
-    text-align: center;
-    background: #103e40;
-    border: 5px solid #ffffff;
-    border-radius: 10px;
-    font-size: 0.3rem;
-    color: #ffffff;
-    margin: 0.8rem auto;
+	display: block;
+	width: 3.32rem;
+	height: 0.8rem;
+	text-align: center;
+	background: #103e40;
+	border: 5px solid #ffffff;
+	border-radius: 10px;
+	font-size: 0.3rem;
+	color: #ffffff;
+	margin: 0.8rem auto;
 }
 
 
 /* 课后作业 */
 
 #khwork {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
-    position: relative;
-    overflow: auto;
+	height: 100%;
+	background: url("../img/loading.png") no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow: auto;
 }
 
 #khworkImg {
-    display: block;
-    width: 6.35rem;
-    margin: 0 auto;
-    margin-top: 1.7rem;
-    margin-bottom: 0.55rem;
+	display: block;
+	width: 6.35rem;
+	margin: 0 auto;
+	margin-top: 1.7rem;
+	margin-bottom: 0.55rem;
 }
 
 #khworkBox {
-    display: block;
-    width: 6rem;
-    height: 7.65rem;
-    margin: 0 auto;
-    padding: 0.35rem 0.35rem;
-    border-radius: 10px;
+	display: block;
+	width: 6rem;
+	height: 7.65rem;
+	margin: 0 auto;
+	padding: 0.35rem 0.35rem;
+	border-radius: 10px;
 }
 
 #khworkBtn {
-    display: block;
-    width: 3.32rem;
-    height: 0.8rem;
-    text-align: center;
-    background: #103e40;
-    border: 5px solid #ffffff;
-    border-radius: 10px;
-    font-size: 0.3rem;
-    color: #ffffff;
-    margin: 0.8rem auto;
+	display: block;
+	width: 3.32rem;
+	height: 0.8rem;
+	text-align: center;
+	background: #103e40;
+	border: 5px solid #ffffff;
+	border-radius: 10px;
+	font-size: 0.3rem;
+	color: #ffffff;
+	margin: 0.8rem auto;
 }
 
 
 /* 弹窗和海报 */
 
 #bill {
-    height: 100%;
-    background: url("../img/loading.png") no-repeat;
-    background-size: 100%;
-    position: relative;
-    overflow: auto;
+	height: 100%;
+	background: url("../img/billimg.png") no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow: auto;
+}
+
+#phone {
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 .alertBox {
-    width: 6.55rem;
-    height: 5.45rem;
-    background: #dae2e3;
-    text-align: center;
-    margin: 3.35rem auto;
-    border-radius: 10px;
-    position: relative;
+	display: none;
+	width: 6.55rem;
+	height: 5.45rem;
+	background: #dae2e3;
+	text-align: center;
+	margin: 3.35rem auto;
+	border-radius: 10px;
+	position: relative;
 }
 
 .alertBox-a {
-    position: absolute;
-    height: 0.68rem;
-    right: -0.3rem;
-    top: -0.3rem;
+	position: absolute;
+	height: 0.68rem;
+	right: -0.3rem;
+	top: -0.3rem;
 }
 
 .alertBox-b {
-    padding-top: 1.6rem;
-    color: #0c3638;
-    font-size: 0.6rem;
+	padding-top: 1.6rem;
+	color: #0c3638;
+	font-size: 0.6rem;
+}
+
+.video-js {
+	width: 100%;
+	height: 100%;
+}
+
+.billbig {
+	width: 6.5rem;
+	margin: 0 auto;
+}
+
+.billImg {
+	display: block;
+	width: 5.8rem;
+	margin: 0 auto;
+	margin-top: 1.2rem;
+	margin-bottom: 0.55rem;
+}
+
+.billBoxTop {
+	font-size: 0;
+}
+
+.billBoxTop img {
+	height: 0.88rem;
+	vertical-align: middle;
+	vertical-align: -webkit-baseline-middle;
+}
+
+.billBoxTop span {
+	margin-left: 0.2rem;
+	font-size: 0.28rem;
+	color: #ffffff;
+}
+
+.billBox p {
+	margin-top: 0.28rem;
+	color: #ffffff;
+	line-height: 0.5rem;
+	font-size: 0.28rem;
+}
+
+.billSave {
+	width: 5.75rem;
+	height: 0.42rem;
+	line-height: 0.42rem;
+	font-size: 0.2rem;
+	color: #828484;
+	margin: 0 auto;
+	background: #ffffff;
+	text-align: center;
+	margin-top: 2.4rem;
+}
+
+#my-video_html5_api {
+	width: 100%;
+	height: 100%;
 }

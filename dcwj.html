@@ -172,26 +172,25 @@
         <button id="dcwjBtn">提交</button>
     </div>
 </body>
-
-<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./lib/jquery.mobile-1.4.5.min.js"></script>
 
 </html>
 <script>
-    $("body").on("swipeleft", function () {
+    $("body").on("swipeleft", function() {
         window.location.href = "./khwork.html";
     });
-    $("body").on("swiperight", function () {
-        window.location.href = "./video.html";
-    });
-    $("#dcwjBtn").click(function () {
+    $("#dcwjBtn").click(function() {
         let wantdata = []
-        $("input:radio:checked").each(function (index, item) {
+        $("input:radio:checked").each(function(index, item) {
             //操作
             let name = item.name
-            let itemdata = { name: item.value }
+            let itemdata = {
+                name: item.value
+            }
             wantdata.push(itemdata)
         });
         console.log(wantdata)
+        window.location.href = "./video.html";
     })
 </script>

@@ -10,38 +10,43 @@
 
 <body>
     <div id="formList">
-            <h2>所在班级</h2>
-            <div class="formListBox">
-                <label>部门:</label>
-                <select name="department">
+        <h2>所在班级</h2>
+        <div class="formListBox">
+            <label>部门:</label>
+            <select name="department">
                     <option value="">请选择所在部门</option>
                     <option value="ty">体育部</option>
                     <option value="wy">文艺部</option>
                 </select>
-            </div>
-            <div class="formListBox">
-                <label>室:</label>
-                <select name="adminisactive">
+        </div>
+        <div class="formListBox">
+            <label>室:</label>
+            <select name="adminisactive">
                     <option value="">请选择所在科室</option>
                     <option value="101">101</option>
                     <option value="102">102</option>
                 </select>
-            </div>
-            <div class="formListBox">
-                <label>工号:</label>
-                <input type="text" name="jobNumber" placeholder="点击输入工号">
-            </div>
-            <button class="formBtn">确认</button>
+        </div>
+        <div class="formListBox">
+            <label>工号:</label>
+            <input type="text" name="jobNumber" placeholder="点击输入工号">
+        </div>
+        <button class="formBtn">确认</button>
     </div>
 </body>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+
 </html>
 <script>
-    $(".formBtn").click(()=>{
+    $(".formBtn").click(() => {
         let department = $("[name='department']").val();
         let adminisactive = $("[name='adminisactive']").val();
         let jobNumber = $("[name='jobNumber']").val();
-        let args = {department:department,adminisactive:adminisactive,jobNumber:jobNumber}
+        let args = {
+            department: department,
+            adminisactive: adminisactive,
+            jobNumber: jobNumber
+        }
         window.location.href = "./workwc.html";
     })
 </script>
