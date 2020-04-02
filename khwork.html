@@ -22,10 +22,16 @@
 
 </html>
 <script>
-    $("body").on("swiperight", function() {
+    $("body").on("swipeleft", function () {
+        let khworkVal = $("#khworkBox").val();
+        if (khworkVal) {
+            window.location.href = "./bill.html";
+        }
+    });
+    $("body").on("swiperight", function () {
         window.location.href = "./dcwj.html";
     });
-    $("#khworkBtn").click(function() {
+    $("#khworkBtn").click(function () {
         let khworkVal = $("#khworkBox").val();
         debugger
     })

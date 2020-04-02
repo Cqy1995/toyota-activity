@@ -12,10 +12,11 @@
 <body>
     <div id="start">
         <img class="startAudLogo" src="./img/openMusic.png" alt="" id="openMus" srcset="">
-        <audio class="startAud" id="startMus" src="./video/音乐1.mp3" controls="controls">
+        <audio class="startAud" id="startMus" src="./video/音乐1.mp3" autoplay controls="controls">
             Your browser does not support the audio element.
         </audio>
         <!-- <audio height="50" width="100" src="https://www.runoob.com/try/demo_source/horse.mp3"></audio> -->
+        <img class="startBigImg" src="./img/startimg.png" alt="" srcset="">
         <div id="startBox">
             <button class="startBtn" id="learnRule">学习规则</button>
             <button class="startBtn" id="inclass">进入课堂</button>
@@ -83,6 +84,7 @@
                 $("#openMus").attr("src", "./img/openMusic.png")
             }
         })
+        $("#openMus").click()
         $("#learnRule").click(() => {
             $("#startRule").show();
         })
@@ -93,5 +95,4 @@
             window.location.href = "./form.html";
         })
     }
-
 </script>
