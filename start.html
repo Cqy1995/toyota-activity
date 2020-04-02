@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>一汽丰田</title>
+</head>
+
+<body>
+    <div id="start">
+        <img class="startAudLogo" src="" alt="" srcset="">
+        <audio class="startAud" src="https://www.w3school.com.cn/i/horse.ogg" controls="controls">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- <audio height="50" width="100" src="https://www.runoob.com/try/demo_source/horse.mp3"></audio> -->
+        <div id="startBox">
+            <button class="startBtn" id="learnRule">学习规则</button>
+            <button class="startBtn" id="inclass">进入课堂</button>
+        </div>
+        <div id="startRule">
+            <img src="./img/gbox.png" class="startImg" alt="" srcset="">
+            <div class="startRuleBox">
+                <div class="startRule-a">
+                    <h3>顾客挚爱日线上学校</h3>
+                    <h3>毕业只需两步</h3>
+                </div>
+                <div class="startRule-b">
+                    <div class="startRule-b-a">
+                        <h3><span class="startLinea"></span>第1步<span class="startLineb"></span></h3>
+                        <p>
+                            完成所有课程学习，
+                        </p>
+                        <p>
+                            大咖讲话、历史课、故事课、影像课、调查课。
+                        </p>
+                    </div>
+                    <div class="startRule-b-b">
+                        <h3><span class="startLinea"></span>第2步<span class="startLineb"></span></h3>
+                        <p>
+                            完成所有课程学习，
+                        </p>
+                        <p>
+                            大咖讲话、历史课、故事课、影像课、调查课。
+                        </p>
+                    </div>
+                    <div class="startRule-b-c">
+                        <h3>毕业后，会为自己所在班级（科室）增加人气。</h3>
+                        <h3>毕业人数占比越高的科室，人气排名也越靠前。</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</html>
+<script>
+ $("#learnRule").click(()=>{
+     $("#startRule").show();
+ })
+ $(".startImg").click(()=>{
+    $("#startRule").hide();
+ })
+ $("#inclass").click(()=>{
+    window.location.href = "./form.html";
+ })
+</script>

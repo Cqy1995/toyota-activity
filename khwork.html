@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>一汽丰田</title>
+</head>
+
+<body>
+    <div id="khwork">
+        <img id="khworkImg" src="./img/khwork.png" alt="">
+        <textarea id="khworkBox" cols="20" placeholder="说说你的上课感受，接下来会如何行动。（请输入10～100字以内文字内容）" rows="10"></textarea>
+        <button id="khworkBtn">生成专属海报</button>
+    </div>
+</body>
+
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</html>
+<script>
+    $("body").on("swiperight", function () {
+        window.location.href = "./dcwj.html";
+    });
+    $("#khworkBtn").click(function () {
+        let khworkVal = $("#khworkBox").val();
+        debugger
+    })
+</script>

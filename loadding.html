@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>一汽丰田</title>
+</head>
+
+<body>
+    <div id="Load">
+        <img src="./img/load.gif" alt="" srcset="">
+        <p class="percent"></p>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./lib/preloadjs.min.js"></script>
+</body>
+
+</html>
+<script>
+    var mainfest = [
+        //图片
+        { src: "./img/actimg.png" },
+        { src: "./img/audioImg.png" },
+        { src: "./img/bg2.png" },
+        { src: "./img/bigman.png" },
+        { src: "./img/dcwj.png" },
+        { src: "./img/down.png" },
+        { src: "./img/gbox.png" },
+        { src: "./img/khwork.png" },
+        { src: "./img/load.gif" },
+        { src: "./img/loading.png" },
+        { src: "./img/name.png" },
+        { src: "./img/toimg.png" },
+        { src: "./img/work.png" },
+        { src: "./img/yvidio.png" },
+        //css
+        { src: "./css/reset.css" },
+        { src: "./css/jquery-ui.min.css" },
+        //js
+        { src: "./css/jquery.mobile-1.4.5.min.js" }
+    ];
+    var preload = {
+        // 预加载函数
+        startPreload: function () {
+            var preload = new createjs.LoadQueue(false);
+            //为preloaded添加整个队列变化时展示的进度事件
+            preload.on("progress", this.handleFileProgress);        
+            //为preloaded添加当队列完成全部加载后触发事件
+            preload.on("complete", this.loadComplete);
+
+            preload.loadManifest(mainfest);
+        },
+        // 当整个队列变化时展示的进度事件的处理函数
+        handleFileProgress: function (event) {
+            console.log(event,"event")
+            $(".percent").text( Math.ceil(event.loaded * 100) + "%");
+        },
+        // 处理preload添加当队列完成全部加载后触发事件
+        loadComplete: function () {
+            window.location.href = "./start.html";
+        }
+    }
+    preload.startPreload();
+
+
+</script>

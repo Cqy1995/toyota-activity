@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>一汽丰田</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <!-- <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css"> -->
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .red {
+            float: left;
+            width: 4.7rem;
+            height: 0.18rem;
+            margin: 0.15rem;
+            background: #0e4547;
+            overflow: hidden;
+        }
+
+        .red .ui-slider-handle {
+            width: 4.7rem;
+            height: 0.18rem;
+        }
+
+        .red .ui-slider-range {
+            background: #fce204;
+        }
+
+        .red .ui-slider-handle {
+            border-color: #fce204;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="workwc">
+        <img class="workwcImg" src="./img/work.png" alt="" srcset="">
+        <div class="workwcBox">
+            <div class="workwcBox-a">科室一</div>
+            <div class="red"></div>
+            <div class="workwcBox-b">10/10</div>
+        </div>
+        <div class="workwcBox">
+            <div class="workwcBox-a">科室二</div>
+            <div class="red"></div>
+            <div class="workwcBox-b">10/10</div>
+        </div>
+        <div class="workwcBox">
+            <div class="workwcBox-a">科室三</div>
+            <div class="red"></div>
+            <div class="workwcBox-b">10/10</div>
+        </div>
+        <div class="workwcBox">
+            <div class="workwcBox-a">科室四</div>
+            <div class="red"></div>
+            <div class="workwcBox-b">10/10</div>
+        </div>
+        <div class="workwcBox">
+            <div class="workwcBox-a">科室五</div>
+            <div class="red"></div>
+            <div class="workwcBox-b">10/10</div>
+        </div>
+        <div class="workwcBox">
+            <div class="workwcBox-a">科室六</div>
+            <div class="red"></div>
+            <div class="workwcBox-b">10/10</div>
+        </div>
+        <img id="workwcImg" src="./img/down.png" alt="" srcset="">
+        <button id="startWork">开启上课</button>
+
+    </div>
+    <script>
+        $(function () {
+            $(".red").slider({
+                orientation: "horizontal",
+                range: "min",
+                max: 255,
+                value: 27,
+
+            });
+            let analogData = [100, 50, 120, 20, 90, 50];//模拟数据
+            $(".red").each(function (index, element) {
+                $(this).slider("value", analogData[index]);
+                if (analogData[index] < 80) {
+                    $(this).children(".ui-slider-range").css({ background: '#fff' })
+                }
+            });
+            $("#startWork").click(function () {
+                window.location.href = "./bigman.html";
+            })
+        });
+    </script>
+</body>
+
+</html>
