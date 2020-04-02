@@ -61,26 +61,37 @@
 
 </html>
 <script>
-    var tag = false;
-    $("#openMus").click(function() {
-        var audio = document.getElementById("startMus")
-        if (tag) {
-            audio.pause();
-            tag = false;
-            $("#openMus").attr("src", "./img/nomusic.png")
-        } else {
-            audio.play();
-            tag = true;
-            $("#openMus").attr("src", "./img/openMusic.png")
+    window.onload = function () {
+        function audioAutoPlay(id) {
+            var audio1 = document.getElementById(id);
+            audio1.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio1.play();
+            }, false);
         }
-    })
-    $("#learnRule").click(() => {
-        $("#startRule").show();
-    })
-    $(".startImg").click(() => {
-        $("#startRule").hide();
-    })
-    $("#inclass").click(() => {
-        window.location.href = "./form.html";
-    })
+        audioAutoPlay('startMus');
+        var tag = false;
+        $("#openMus").click(function () {
+            var audio = document.getElementById("startMus")
+            if (tag) {
+                audio.pause();
+                tag = false;
+                $("#openMus").attr("src", "./img/nomusic.png")
+            } else {
+                audio.play();
+                tag = true;
+                $("#openMus").attr("src", "./img/openMusic.png")
+            }
+        })
+        $("#learnRule").click(() => {
+            $("#startRule").show();
+        })
+        $(".startImg").click(() => {
+            $("#startRule").hide();
+        })
+        $("#inclass").click(() => {
+            window.location.href = "./form.html";
+        })
+    }
+
 </script>
