@@ -377,19 +377,21 @@
 }
 
 #startWork,
-._button {
+.videoButton {
     display: block;
     width: 3.35rem;
     height: 0.65rem;
     color: #ffffff;
-    margin: 0 auto;
     font-size: 0.4rem;
-    border-radius: 10px;
     border: 2px solid #ffffff;
     margin-top: 1.4rem;
     line-height: 0.48rem;
     background-image: linear-gradient(169deg, #1a5054 0%, #022526 100%);
     border-radius: 17px;
+    z-index: 99999;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.65rem;
 }
 
 

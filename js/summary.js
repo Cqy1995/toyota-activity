@@ -130,10 +130,10 @@ videojs("my-video").ready(function() {
     var myPlayer = this;
     myPlayer.play();
 });
-$("._button").click(function() {
-        window.location.href = "./dcwj.html";
-    })
-    /*调查问卷*/
+$(".videoButton").click(function() {
+    mySwiper.slideTo(4);
+});
+/*调查问卷*/
 $("#dcwjBtn").click(function() {
         let wantdata = []
         $("input:radio:checked").each(function(index, item) {
