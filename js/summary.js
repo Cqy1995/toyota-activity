@@ -2,11 +2,12 @@ var mySwiper = new Swiper('.swiper-container', {
     hashNavigation: true,
     mousewheelControl: true,
     onSlideChangeEnd: function(swiper) {
-        clearInterval(intervalid);
-        $("#time").text("")
+        clearskip();
         if (swiper.activeIndex == 0 || swiper.activeIndex == 1 || swiper.activeIndex == 2 || swiper.activeIndex == 3) {
-            $("#time").show();
+            $("#skip").show();
             watch20s();
+        } else {
+            $("#skip").hide();
         }
     }
 })
@@ -21,16 +22,24 @@ function watch20s() {
     function fun() {
         let timeBox = $("#time")
         if (i == 0) {
-            $("#time").text("");
-            timeBox.hide();
-            $('.swiper-container').removeClass("swiper-no-swiping");
-            clearInterval(intervalid);
+            $("#skip").hide();
+            clearskip();
         }
         timeBox.text(i);
         i--;
     }
 }
 watch20s();
+
+function clearskip() {
+    $("#time").text("");
+    $('.swiper-container').removeClass("swiper-no-swiping");
+    clearInterval(intervalid);
+}
+$("#skip").click(function() {
+    $(this).hide();
+    clearskip();
+});
 /*暖心视频*/
 //设置中文
 videojs.addLanguage('zh-CN', {
