@@ -11,7 +11,9 @@
 
 <body>
     <div id="Load">
-        <img src="./img/load.gif" alt="" srcset="">
+        <div class="loadImgBox">
+            <img src="./img/loadding.png" alt="" srcset="">
+        </div>
         <p class="percent"></p>
     </div>
     <script src="./js/jquery.min.js"></script>
@@ -87,7 +89,7 @@
     ];
     var preload = {
         // 预加载函数
-        startPreload: function() {
+        startPreload: function () {
             var preload = new createjs.LoadQueue(false);
             //为preloaded添加整个队列变化时展示的进度事件
             preload.on("progress", this.handleFileProgress);
@@ -97,12 +99,12 @@
             preload.loadManifest(mainfest);
         },
         // 当整个队列变化时展示的进度事件的处理函数
-        handleFileProgress: function(event) {
+        handleFileProgress: function (event) {
             console.log(event, "event")
             $(".percent").text(Math.ceil(event.loaded * 100) + "%");
         },
         // 处理preload添加当队列完成全部加载后触发事件
-        loadComplete: function() {
+        loadComplete: function () {
             window.location.href = "./start.html";
         }
     }

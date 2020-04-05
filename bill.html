@@ -22,7 +22,7 @@
             bottom: 0;*/
             display: flex;
         }
-        
+
         #thecanvas {
             position: absolute;
             top: 0;
@@ -30,7 +30,7 @@
             z-index: 1;
             opacity: 0;
         }
-        
+
         #finalImg {
             position: absolute;
             top: 0;
@@ -40,7 +40,7 @@
             display: flex;
             width: 100%;
         }
-        
+
         .billImg {
             display: block;
             width: 5.8rem;
@@ -48,35 +48,35 @@
             margin-top: 1.2rem;
             margin-bottom: 0.55rem;
         }
-        
+
         .billBox {
             width: 5.3rem;
             margin: 0.3rem auto;
         }
-        
+
         .billBoxTop {
             font-size: 0;
         }
-        
+
         .billBoxTop img {
             height: 0.88rem;
             vertical-align: middle;
             vertical-align: -webkit-baseline-middle;
         }
-        
+
         .billBoxTop span {
             margin-left: 0.2rem;
             font-size: 0.28rem;
             color: #ffffff;
         }
-        
+
         .billBox p {
             margin-top: 0.28rem;
             color: #ffffff;
             line-height: 0.5rem;
             font-size: 0.28rem;
         }
-        
+
         .billlogo2 {
             position: absolute;
             width: 4.5rem;
@@ -84,7 +84,7 @@
             margin-left: -2.25rem;
             bottom: 1rem;
         }
-        
+
         .billSave {
             width: 5.8rem;
             height: 0.45rem;
@@ -115,7 +115,7 @@
                         <span>微信名称</span>
                     </div>
 
-                    <p>
+                    <p id="biiText">
                         假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字假字。
                     </p>
 
@@ -137,6 +137,17 @@
 <script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
 <script src="./lib/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript">
+    let str = decodeURI(location.search)
+    let str2 = getCaption(str)
+    document.getElementById("biiText").innerText = str2
+
+    function getCaption(obj) {
+        var index = obj.lastIndexOf("\?");
+        obj = obj.substring(index + 1, obj.length);
+        //  console.log(obj);
+        return obj;
+    }
+
     var height = $("#view").height() || 650;
     var width = $("#view").width();
     console.log(height, width)
@@ -155,17 +166,17 @@
         console.log('test');
         html2canvas(document.getElementById('view'), {
             canvas: canvas,
-            onrendered: function(canvas) {
+            onrendered: function (canvas) {
                 document.body.appendChild(canvas);
                 callback()
             },
         });
         // console.log("a完成")
     }
-    $(".real-lottory").click(function() {
+    $(".real-lottory").click(function () {
         console.log("抽奖")
     })
-    $(".save").click(function(e) {
+    $(".save").click(function (e) {
         setTimeout(canvastoImg(document.getElementsByTagName("canvas")[0], 'finalImg'), 2000)
     })
 
@@ -180,9 +191,9 @@
 
     }
 
-    $(function() {
+    $(function () {
 
-        setTimeout(takeScreenshot(function() {
+        setTimeout(takeScreenshot(function () {
             canvastoImg(document.getElementsByTagName("canvas")[0], 'finalImg')
 
         }), 2000)
@@ -191,7 +202,7 @@
 
 
     })
-    $("body").on("swipeleft", function() {
+    $("body").on("swipeleft", function () {
         alert("")
         window.location.href = "./finishwork.html";
     });
