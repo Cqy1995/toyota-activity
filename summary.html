@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>一汽丰田</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="lib/swiper.min.js"></script>
+    <script src="lib/swiper.animate.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            font-family: "microsoft yahei";
+        }
+        
+        .swiper-container {
+            /*  width: 320px;
+    height: 480px;*/
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+        
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+        
+        img {
+            display: inline-block;
+        }
+        
+        .swiper-pagination-bullet {
+            width: 6px;
+            height: 6px;
+            background: #fff;
+            opacity: .4;
+        }
+        
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+        
+        .ani {
+            position: absolute;
+        }
+        
+        .txt {
+            position: absolute;
+        }
+        
+        #array {
+            position: absolute;
+            z-index: 999;
+            -webkit-animation: start 1.5s infinite ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-------------大咖讲话----------------->
+            <section class="swiper-slide swiper-slide1">
+                <div id="bigman">
+                    <!-- 可添加动画效果 -->
+                    <!-- class="ani resize" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s"
+                    class="ani resize" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s" -->
+                    <img id="bigmanImg" src="./img/bigman.png" alt="" srcset="">
+                    <div class="bigmanBox">
+                        <h2>2020年顾客第一挚爱日</h2>
+                        <div class="bigmanBox-a">
+                            <img class="bigmanBox-aImg" src="./img/actimg.png" alt="">
+                            <div class="bigmanBox-aBox">
+                                <h3>一汽丰田汽车销售有限公</h3>
+                                <span>总经理</span>
+                                <img src="./img//name.png" alt="" srcset="">
+                            </div>
+
+                        </div>
+                        <p class="bigmanBl">
+                            当前的中国，正处于向新型移动社会转变的关键时期。同时，中国车市也在由增量市场逐步转化为存量市场，“新四化”快速普及，顾客需求快速变化。机遇与挑战并存。
+                        </p>
+                        <p class="bigmanBl">
+                            “顾客挚爱日”是一个很好的契机，我们要从顾客的声音中反思工作的现状，从顾客的需求中发现改善的目标，用果断的行动提高工作品质，将“顾客第一”的理念贯彻到底。
+                        </p>
+                        <p class="bigmanBl">
+                            请调动起我们的全部热情和积极性，创造超越顾客期待的产品与服务，赢得这个时代的挑战！
+
+                        </p>
+                    </div>
+                    <div class="bigmanBox">
+                        <h2>2020年顾客第一挚爱日</h2>
+                        <div class="bigmanBox-a">
+                            <img class="bigmanBox-aImg" src="./img/actimg.png" alt="">
+                            <div class="bigmanBox-aBox">
+                                <h3>一汽丰田汽车销售有限公</h3>
+                                <span>总经理</span>
+                                <img src="./img//name.png" alt="" srcset="">
+                            </div>
+
+                        </div>
+                        <p class="bigmanBl">
+                            当前的中国，正处于向新型移动社会转变的关键时期。同时，中国车市也在由增量市场逐步转化为存量市场，“新四化”快速普及，顾客需求快速变化。机遇与挑战并存。
+                        </p>
+                        <p class="bigmanBl">
+                            “顾客挚爱日”是一个很好的契机，我们要从顾客的声音中反思工作的现状，从顾客的需求中发现改善的目标，用果断的行动提高工作品质，将“顾客第一”的理念贯彻到底。
+                        </p>
+                        <p class="bigmanBl">
+                            请调动起我们的全部热情和积极性，创造超越顾客期待的产品与服务，赢得这个时代的挑战！
+
+                        </p>
+                    </div>
+                    <div class="flickerRight">
+                        <img src="./img/down.png" alt="">
+                        <img src="./img/down.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-------------上节课回故-------------->
+            <section class="swiper-slide swiper-slide2">
+                <div id="todown">
+                    <img id="todownImg" src="./img/history.png" alt="" srcset="">
+                    <div id="todownBox">
+                        <img src="./img/toimg.png" alt="">
+                        <img src="./img/toimg.png" alt="">
+                    </div>
+                    <div class="flickerRight">
+                        <img src="./img/down.png" alt="">
+                        <img src="./img/down.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--------------顾客声音-------------->
+            <section class="swiper-slide swiper-slide3">
+                <div id="curaudio">
+                    <img id="curaudioImg" src="./img/audioImg.png" alt="" srcset="">
+                    <div class="curaudioBox">
+                        <div class="curaudioBoxTop">
+                            <p>
+                                <span>车辆信息：普拉多</span>
+                                <span>关键词：信任危机</span>
+                            </p>
+                            <button>· 投诉</button>
+                        </div>
+                        <h2 class="curaudioTit">24小时救援，说到做不到</h2>
+                        <div class="curaudioBoxBtm">
+                            <h3>顾客的声音</h3>
+                            <div class="curaudioBoxBtm-a">
+                                <p>· 晚上途中车辆遭遇故障，需要更换备胎，给经常保养的4S店打电话寻求帮助；
+                                </p>
+                                <p>· 后再联系4S店，等了两天无人理，说好的24小时救援却做不到，欺诈客户；</p>
+                                <p>· “已下班来不了”、“北京五环外不能来”，工作人员找各种理由推脱；
+                                </p>
+                                <p>· 给平安保险打电话，很快派人过来服务周到，4S店的服务还不如保险公司。
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="Hline" />
+                        <div class="curaudioBoxBtm2">
+                            <h3>我们的反思</h3>
+                            <div class="curaudioBoxBtm2-a">
+                                <p>给客户的承诺没有做到，面对再联系一拖再拖，让客户对一汽丰田品牌产生信任危机。如何加强监管，确保4S店严格执行服务承诺，确保每个员工都能把工作做到位，是根本所在
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="curaudioBox">
+                        <div class="curaudioBoxTop">
+                            <p>
+                                <span>车辆信息：卡罗拉</span>
+                                <span>关键词：细节致胜</span>
+                            </p>
+                            <button>·称赞</button>
+                        </div>
+                        <h2 class="curaudioTit">服务贴心让客户倍感惊喜</h2>
+                        <div class="curaudioBoxBtm">
+                            <h3>顾客的声音</h3>
+                            <div class="curaudioBoxBtm-a">
+                                <p>·到4S店保养，在客休区等待的时候，倒茶水的工作人员，在服务时让人感觉一下子回到家里一样；
+                                </p>
+                                <p>·当天带了孩子去店里，小朋友觉得不好玩特别吵闹，工作人员看到自己的情绪不太好，专门过来调解；</p>
+                                <p>·还给孩子准备了小点心，茶水一喝完就续上，更专门把电视打开，这样的服务充满了惊喜，让人觉得是在为客户着想。
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="Hline" />
+                        <div class="curaudioBoxBtm2">
+                            <h3>我们的反思</h3>
+                            <div class="curaudioBoxBtm2-a">
+                                <p>把客户的事当成自己的事来解决，在工作岗位上精益求精，用行动建立品牌好感度，将会大幅提升一汽丰田在客户心中的高品质形象，扩大一汽丰田的品牌影响力。
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="curaudioBox">
+                        <div class="curaudioBoxTop">
+                            <p>
+                                <span>车辆信息：全新RAV4荣放</span>
+                                <span>关键词：配置落后</span>
+                            </p>
+                            <button>· 建议</button>
+                        </div>
+                        <h2 class="curaudioTit">显示屏清晰度太差，建议升级</h2>
+                        <div class="curaudioBoxBtm">
+                            <h3>顾客的声音</h3>
+                            <div class="curaudioBoxBtm-a">
+                                <p>·准备购买全新RAV4荣放，各方面都很满意，唯独中控屏幕的品质和车辆极不匹配；
+                                </p>
+                                <p>·中控屏幕的清晰度很差，像素模糊，甚至比不上路边店几百元的杂牌产品；严重影响了购买的意愿；</p>
+                                <p>·希望厂家能够重视第三方采购零部件的品质，尽快升级全新RAV4的中控屏幕，不要落后于时代。
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="Hline" />
+                        <div class="curaudioBoxBtm2">
+                            <h3>我们的反思</h3>
+                            <div class="curaudioBoxBtm2-a">
+                                <p>不论是产品还是服务，“短板”都是最容易被客户注意并记住的地方。倾听顾客声音，尽快改善“短板”，就能让客户感受到诚意，进而产生信任；若对客户的声音不闻不问，势必会被客户抛弃。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flickerRight">
+                        <img src="./img/down.png" alt="">
+                        <img src="./img/down.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--------------暖心视频----------------->
+            <section class="swiper-slide swiper-slide4">
+                <div id="yqVideo">
+                    <img id="yqVideoImg" src="./img/yvidio.png" alt="" srcset="">
+                    <div class="yqVideoList">
+                        <video id="my-video" muted class="video-js" controls preload="auto" data-setup="{}">
+                            <!-- <source src="./video/TMCI系统部改善事例2020年CFDAY（CH）.mp4" type="video/mp4"> -->
+                                <source src="https://v.qq.com/x/page/q0897fvyjg9.html">
+                        </video>
+                    </div>
+                    <button class="_button">进入调查课</button>
+                    <div class="flickerRight">
+                        <img src="./img/down.png" alt="">
+                        <img src="./img/down.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--------------调查问卷----------------->
+            <section class="swiper-slide swiper-slide5">
+                <div id="dcwj">
+                    <img id="dcwjImg" src="./img/dcwj.png" alt="">
+                    <div id="dcwjBox">本次问卷调查，旨在收集大家对2020顾客挚爱日线上活动的宝贵意见，意见将作为后续活动的参考，请务必认真填写！</div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q1：2020顾客挚爱日从线下转到线上，你怎么看？</h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question1" value="11">
+                            <span>A方便省时，为这波操作点赞</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question1" value="12">
+                            <span>B 疫情时期，线上活动才安全</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question1" value="13">
+                            <span>C 感觉一般，线下体验会更好</span>
+                        </div>
+                    </div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q2：参与挚爱日线上活动所需时间，你觉得如何？</h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question2" value="21">
+                            <span>A 所需时间过长，内容版块多／太复杂</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question2" value="22">
+                            <span>B 所需时间合适，内容够丰富／够新颖</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question2" value="23">
+                            <span>C 所需时间一般，内容不丰富／没亮点</span>
+                        </div>
+                    </div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q3：相比往年，增加的各科室排名，你是否接受？</h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question3" value="31">
+                            <span>A 可接受，提升了员工的团队荣誉感</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question3" value="32">
+                            <span>B 无所谓，反正自己每年都积极参加</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question3" value="33">
+                            <span>C 不接受，觉得对人多的科室不公平</span>
+                        </div>
+                    </div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q4：相比以往，增加的宣言分享朋友圈，你是否接受？</h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question4" value="41">
+                            <span>A 可接受，让更多人监督，加速自身改善进度</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question4" value="42">
+                            <span>B 无所谓，分享还是不分享，对我来说没差别</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question4" value="43">
+                            <span>C 不接受，会让用户看到不足，产生负面影响</span>
+                        </div>
+                    </div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q5：视频展示，从往年的不足转为优秀成绩展示，你怎么看？ </h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question5" value="51">
+                            <span>A 鼓舞人心，让员工工作更有激情</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question5" value="52">
+                            <span>B 都差不多，工作要有一个平常心</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question5" value="53">
+                            <span>B 都差不多，工作要有一个平常心</span>
+                        </div>
+                    </div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q6：你觉得科室小组讨论学习的形式怎么样？</h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question6" value="61">
+                            <span>A 有助于增加团队凝聚力</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question6" value="62">
+                            <span>B 感觉讨论形式大于内容</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question6" value="63">
+                            <span>C 形式老土没创意体验差</span>
+                        </div>
+                    </div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q7：本次活动中，对你触动最大的展示版块是？</h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question7" value="71">
+                            <span>A 顾客声音展示</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question7" value="72">
+                            <span>B 暖心视频展示</span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question7" value="73">
+                            <span>C TOP讲话展示</span>
+                        </div>
+                    </div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q8：你觉得挚爱日活动，还可以拓展哪些互动？</h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question8" value="81">
+                            <span>A 现地现物，深入4S店与客户访谈
+                            </span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question8" value="82">
+                            <span> B 组织参观优秀企业，借鉴成功经验
+                            </span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question8" value="83">
+                            <span>C 设置挚爱博物馆，展现成功案例</span>
+                        </div>
+                    </div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q9：每年一次的挚爱日，你的收获是？</h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question9" value="91">
+                            <span>A 及时看清工作中的不足，让改善更有方向
+                            </span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question9" value="92">
+                            <span>B 了解到非一线岗位的工作，也会影响顾客
+                            </span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question9" value="93">
+                            <span>C 没作用，我的工作自己做主，与顾客无关</span>
+                        </div>
+                    </div>
+                    <div class="dcwjBoxMain">
+                        <h2 class="dcwjBoxMain-a">Q10：接下来，在工作上你有什么打算？</h2>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question10" value="101">
+                            <span>A 把具体的改善落实到行动中
+                            </span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question10" value="102">
+                            <span>B 按照原计划按部就班地工作
+                            </span>
+                        </div>
+                        <div class="dcwjBoxMain-b">
+                            <input type="radio" name="question10" value="103">
+                            <span>C 当前岗位压力大想换个岗位</span>
+                        </div>
+                    </div>
+                    <button id="dcwjBtn">提交</button>
+                </div>
+            </section>
+            <!-------------课后作业----------------->
+            <section class="swiper-slide swiper-slide6">
+                <div id="khwork">
+                    <img id="khworkImg" src="./img/khwork.png" alt="">
+                    <textarea id="khworkBox" maxlength="100" cols="20" placeholder="说说你的上课感受，接下来会如何行动。（请输入10～100字以内文字内容）" rows="10"></textarea>
+                    <button id="khworkBtn">生成专属海报</button>
+                </div>
+            </section>
+
+
+        </div>
+
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/video.min.js"></script>
+    <script src="./js/summary.js"></script>
+</body>
+
+</html>
