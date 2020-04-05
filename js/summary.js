@@ -144,8 +144,7 @@ $("#dcwjBtn").click(function() {
             }
             wantdata.push(itemdata)
         });
-        console.log(wantdata)
-        window.location.href = "./khwork.html";
+        mySwiper.slideTo(5);
     })
     /*课后作业*/
 $("#khworkBtn").click(function() {
