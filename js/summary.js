@@ -1,14 +1,38 @@
 var mySwiper = new Swiper('.swiper-container', {
-        hashNavigation: true,
-        mousewheelControl: true,
-        touchEnd: function(event) {
-            //你的事件
-            console.log(event, "touchEnd````````````")
-        },
+    hashNavigation: true,
+    mousewheelControl: true,
+    onSlideChangeEnd: function(swiper) {
+        clearInterval(intervalid);
+        $("#time").text("")
+        if (swiper.activeIndex == 0 || swiper.activeIndex == 1 || swiper.activeIndex == 2 || swiper.activeIndex == 3) {
+            $("#time").show();
+            watch20s();
+        }
+    }
+})
+var intervalid;
 
-    })
-    /*暖心视频*/
-    //设置中文
+function watch20s() {
+    $('.swiper-container').addClass("swiper-no-swiping");
+    var i = 20;
+
+    intervalid = setInterval(fun, 1000);
+
+    function fun() {
+        let timeBox = $("#time")
+        if (i == 0) {
+            $("#time").text("");
+            timeBox.hide();
+            $('.swiper-container').removeClass("swiper-no-swiping");
+            clearInterval(intervalid);
+        }
+        timeBox.text(i);
+        i--;
+    }
+}
+watch20s();
+/*暖心视频*/
+//设置中文
 videojs.addLanguage('zh-CN', {
     "Play": "播放",
     "Pause": "暂停",
