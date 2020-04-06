@@ -3,7 +3,7 @@ var mySwiper = new Swiper('.swiper-container', {
     mousewheelControl: true,
     onSlideChangeEnd: function(swiper) {
         clearskip();
-        if (swiper.activeIndex == 0 || swiper.activeIndex == 1 || swiper.activeIndex == 2 || swiper.activeIndex == 3) {
+        if (swiper.activeIndex == 0 || swiper.activeIndex == 1 || swiper.activeIndex == 2 || swiper.activeIndex == 3|| swiper.activeIndex == 4) {
             $("#skip").show();
             watch20s();
         } else {
@@ -144,6 +144,7 @@ $("#dcwjBtn").click(function() {
             }
             wantdata.push(itemdata)
         });
+            console.log(wantdata);
         mySwiper.slideTo(5);
     })
     /*课后作业*/

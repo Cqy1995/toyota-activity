@@ -72,12 +72,38 @@
             <div class="red"></div>
             <div class="workwcBox-b">10/10</div>
         </div>
+        <div class="newBox">
+            <div class="workwcBox">
+                <div class="workwcBox-a">科室七</div>
+                <div class="red"></div>
+                <div class="workwcBox-b">10/10</div>
+            </div>
+            <div class="workwcBox">
+                <div class="workwcBox-a">科室八</div>
+                <div class="red"></div>
+                <div class="workwcBox-b">10/10</div>
+            </div>
+            <div class="workwcBox">
+                <div class="workwcBox-a">科室九</div>
+                <div class="red"></div>
+                <div class="workwcBox-b">10/10</div>
+            </div>
+            <div class="workwcBox">
+                <div class="workwcBox-a">科室十</div>
+                <div class="red"></div>
+                <div class="workwcBox-b">10/10</div>
+            </div>
+        </div>
         <img id="workwcImg" src="./img/down.png" alt="" srcset="">
         <button id="startWork">开启上课</button>
 
     </div>
     <script>
         $(function() {
+            // 点击显示更多
+            $("#workwcImg").click(function(){
+                $(".newBox").show()
+            })
             $(".red").slider({
                 orientation: "horizontal",
                 range: "min",
@@ -85,7 +111,7 @@
                 value: 27,
 
             });
-            let analogData = [100, 100, 120, 20, 40, 50]; //模拟数据
+            let analogData = [100, 100, 120, 20, 40, 50,40,75,25,100]; //模拟数据
             $(".red").each(function(index, element) {
                 $(this).slider("value", analogData[index]);
                 if (analogData[index] < 80) {

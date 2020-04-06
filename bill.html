@@ -22,7 +22,7 @@
             bottom: 0;*/
             display: flex;
         }
-        
+
         #thecanvas {
             position: absolute;
             top: 0;
@@ -30,7 +30,7 @@
             z-index: 1;
             opacity: 0;
         }
-        
+
         #finalImg {
             position: absolute;
             top: 0;
@@ -40,7 +40,7 @@
             display: flex;
             width: 100%;
         }
-        
+
         .billImg {
             display: block;
             width: 5.8rem;
@@ -48,35 +48,35 @@
             margin-top: 1.2rem;
             margin-bottom: 0.55rem;
         }
-        
+
         .billBox {
             width: 5.3rem;
             margin: 0.3rem auto;
         }
-        
+
         .billBoxTop {
             font-size: 0;
         }
-        
+
         .billBoxTop img {
             height: 0.88rem;
             vertical-align: middle;
             vertical-align: -webkit-baseline-middle;
         }
-        
+
         .billBoxTop span {
             margin-left: 0.2rem;
             font-size: 0.28rem;
             color: #ffffff;
         }
-        
+
         .billBox p {
             margin-top: 0.28rem;
             color: #ffffff;
             line-height: 0.5rem;
             font-size: 0.28rem;
         }
-        
+
         .billlogo2 {
             position: absolute;
             width: 4.5rem;
@@ -84,7 +84,7 @@
             margin-left: -2.25rem;
             bottom: 1rem;
         }
-        
+
         .billSave {
             width: 5.8rem;
             height: 0.45rem;
@@ -99,10 +99,51 @@
             left: 50%;
             margin-left: -2.9rem;
         }
+
+        #gameOver {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            z-index: 990000000000;
+            overflow: hidden;
+        }
+
+        .alertBox {
+            width: 6.55rem;
+            height: 5.45rem;
+            background: #dae2e3;
+            text-align: center;
+            margin: 3.35rem auto;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .alertBox-a {
+            position: absolute;
+            height: 0.68rem;
+            right: -0.3rem;
+            top: -0.3rem;
+        }
+
+        .alertBox-b {
+            padding-top: 1.6rem;
+            color: #0c3638;
+            font-size: 0.6rem;
+        }
     </style>
 </head>
 
 <body>
+    <div id="gameOver">
+        <div class="alertBox">
+            <img class="alertBox-a" src="./img/gbox.png" alt="" srcset="">
+            <div class="alertBox-b">
+                <p>恭喜您</p>
+                <p>作业以完成</p>
+            </div>
+        </div>
+    </div>
     <div id="content">
         <div id="view">
             <img src="./img/billimg.png" alt="" style="width: 100%;height: 100%" class="bc">
@@ -131,8 +172,11 @@
 <script src="js/base64.js"></script>
 <script src="js/canvas2image.js"></script>
 <script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
-<script src="./lib/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript">
+    // 关闭弹窗
+    $(".alertBox-a").click(function() {
+        $("#gameOver").hide()
+    })
     let str = decodeURI(location.search)
     let str2 = getCaption(str)
     document.getElementById("biiText").innerText = str2
@@ -162,17 +206,17 @@
         console.log('test');
         html2canvas(document.getElementById('view'), {
             canvas: canvas,
-            onrendered: function(canvas) {
+            onrendered: function (canvas) {
                 document.body.appendChild(canvas);
                 callback()
             },
         });
         // console.log("a完成")
     }
-    $(".real-lottory").click(function() {
+    $(".real-lottory").click(function () {
         console.log("抽奖")
     })
-    $(".save").click(function(e) {
+    $(".save").click(function (e) {
         setTimeout(canvastoImg(document.getElementsByTagName("canvas")[0], 'finalImg'), 2000)
     })
 
@@ -184,22 +228,16 @@
         $("#" + id).attr('src', image.src)
         $(".imgSrc").text(image.src)
         return image;
-
     }
 
-    $(function() {
-
-        setTimeout(takeScreenshot(function() {
+    $(function () {
+        setTimeout(takeScreenshot(function () {
             canvastoImg(document.getElementsByTagName("canvas")[0], 'finalImg')
 
         }), 2000)
-
-
-
-
     })
-    $("body").on("swipeleft", function() {
-        window.location.href = "./finishwork.html";
+    $("body").on("swipeleft", function () {
+        // window.location.href = "./finishwork.html";
     });
 </script>
 

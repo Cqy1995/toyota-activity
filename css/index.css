@@ -11,7 +11,7 @@
     width: 2.2rem;
     height: 2.2rem;
     position: absolute;
-    top: 2.2rem;
+    top: 3.5rem;
     left: 50%;
     margin-left: -1.1rem;
     animation: myfirst 1s;
@@ -48,7 +48,7 @@
 #Load p {
     position: absolute;
     width: 100%;
-    top: 4.8rem;
+    top: 6rem;
     font-size: 0.4rem;
     color: #ffffff;
     text-align: center;
@@ -362,9 +362,9 @@
     margin-bottom: 0.4rem;
     animation: flicker 1s;
     animation-iteration-count: infinite;
-    position: absolute;
-    top: 8rem;
-    left: 49%;
+    /* position: absolute; */
+    /* top: 8rem; */
+    /* left: 49%; */
 }
 
 @keyframes flicker {
@@ -375,7 +375,6 @@
         top: 8.2rem;
     }
 }
-
 #startWork,
 .videoButton {
     display: block;
@@ -392,6 +391,9 @@
     position: absolute;
     left: 50%;
     margin-left: -1.65rem;
+}
+#startWork{
+    margin-top: 0;
 }
 
 
@@ -473,10 +475,11 @@
 }
 
 .flickerRight {
-    position: absolute;
+    position: fixed;
     right: 0.1rem;
-    top: 60%;
+    top: 50%;
     width: 0.25rem;
+    margin-top: -0.5rem;
     animation: flickerRight 1s;
     animation-iteration-count: infinite;
 }
@@ -913,4 +916,7 @@
 #my-video_html5_api {
     width: 100%;
     height: 100%;
+}
+.newBox{
+    display: none;
 }
