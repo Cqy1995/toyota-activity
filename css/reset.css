@@ -96,6 +96,11 @@ html {
     font-size: calc(100 / 750 * 100vw);
 }
 
+input,
+select {
+    outline: none;
+}
+
 .ui-page {
     height: 100%;
 }
