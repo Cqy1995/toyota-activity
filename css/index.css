@@ -282,6 +282,8 @@
     border-radius: 17px;
     color: #5ca2a7;
     border-radius: 8px;
+    outline-style: none;
+    -webkit-appearance: none;
 }
 
 .formListBox input::-webkit-input-placeholder {
@@ -404,7 +406,7 @@
 #bigman {
     height: 100%;
     background: url("../img/loading.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     position: relative;
     overflow: auto;
 }
@@ -507,7 +509,7 @@
 #todown {
     height: 100%;
     background: url("../img/loading.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     position: relative;
     overflow: auto;
 }
@@ -535,7 +537,7 @@
 #curaudio {
     height: 100%;
     background: url("../img/loading.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     position: relative;
     overflow: auto;
 }
@@ -802,6 +804,8 @@
     margin: 0 auto;
     padding: 0.35rem 0.35rem;
     border-radius: 10px;
+    outline-style: none;
+    -webkit-appearance: none;
 }
 
 #khworkBtn {
@@ -824,7 +828,7 @@
     width: 100%;
     height: 100%;
     background: url("../img/billimg.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     z-index: 99;
     /*position: relative;*/
     position: fixed;
@@ -857,7 +861,7 @@
     width: 100%;
     height: 100%;
     background: url("../img/gameover.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     z-index: 99;
     overflow: hidden;
 }

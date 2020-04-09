@@ -22,7 +22,7 @@
             bottom: 0;*/
             display: flex;
         }
-
+        
         #thecanvas {
             position: absolute;
             top: 0;
@@ -30,7 +30,7 @@
             z-index: 1;
             opacity: 0;
         }
-
+        
         #finalImg {
             position: absolute;
             top: 0;
@@ -40,7 +40,7 @@
             display: flex;
             width: 100%;
         }
-
+        
         .billImg {
             display: block;
             width: 5.8rem;
@@ -48,35 +48,35 @@
             margin-top: 1.2rem;
             margin-bottom: 0.55rem;
         }
-
+        
         .billBox {
             width: 5.3rem;
             margin: 0.3rem auto;
         }
-
+        
         .billBoxTop {
             font-size: 0;
         }
-
+        
         .billBoxTop img {
             height: 0.88rem;
             vertical-align: middle;
             vertical-align: -webkit-baseline-middle;
         }
-
+        
         .billBoxTop span {
             margin-left: 0.2rem;
             font-size: 0.28rem;
             color: #ffffff;
         }
-
+        
         .billBox p {
             margin-top: 0.28rem;
             color: #ffffff;
             line-height: 0.5rem;
             font-size: 0.28rem;
         }
-
+        
         .billlogo2 {
             position: absolute;
             width: 4.5rem;
@@ -84,7 +84,7 @@
             margin-left: -2.25rem;
             bottom: 1rem;
         }
-
+        
         .billSave {
             width: 5.8rem;
             height: 0.45rem;
@@ -99,7 +99,7 @@
             left: 50%;
             margin-left: -2.9rem;
         }
-
+        
         #gameOver {
             position: absolute;
             width: 100%;
@@ -108,7 +108,7 @@
             z-index: 990000000000;
             overflow: hidden;
         }
-
+        
         .alertBox {
             width: 6.55rem;
             height: 5.45rem;
@@ -118,14 +118,14 @@
             border-radius: 10px;
             position: relative;
         }
-
+        
         .alertBox-a {
             position: absolute;
             height: 0.68rem;
             right: -0.3rem;
             top: -0.3rem;
         }
-
+        
         .alertBox-b {
             padding-top: 1.6rem;
             color: #0c3638;
@@ -146,6 +146,7 @@
     </div>
     <div id="content">
         <div id="view">
+            <embed type="text/html" style="width: 32px;height: 32px;position: fixed;right: 15px;top: 50px;" src="publicautio.html" />
             <img src="./img/billimg.png" alt="" style="width: 100%;height: 100%" class="bc">
             <div style="position: absolute;top: 0;width: 100%;">
                 <img class="billImg" src="./img/billtop.png" alt="">
@@ -206,17 +207,17 @@
         console.log('test');
         html2canvas(document.getElementById('view'), {
             canvas: canvas,
-            onrendered: function (canvas) {
+            onrendered: function(canvas) {
                 document.body.appendChild(canvas);
                 callback()
             },
         });
         // console.log("a完成")
     }
-    $(".real-lottory").click(function () {
+    $(".real-lottory").click(function() {
         console.log("抽奖")
     })
-    $(".save").click(function (e) {
+    $(".save").click(function(e) {
         setTimeout(canvastoImg(document.getElementsByTagName("canvas")[0], 'finalImg'), 2000)
     })
 
@@ -230,13 +231,13 @@
         return image;
     }
 
-    $(function () {
-        setTimeout(takeScreenshot(function () {
+    $(function() {
+        setTimeout(takeScreenshot(function() {
             canvastoImg(document.getElementsByTagName("canvas")[0], 'finalImg')
 
         }), 2000)
     })
-    $("body").on("swipeleft", function () {
+    $("body").on("swipeleft", function() {
         // window.location.href = "./finishwork.html";
     });
 </script>

@@ -1,0 +1,36 @@
+<div style="width: 24px;height: 24px;">
+    <img style="display: block;width: 24px;height: 24px;" src="./img/openMusic.png" alt="" id="openMus" srcset="">
+    <audio style="display: none;" id="startMus" src="./video/音乐1.mp3" autoplay="autoplay" controls="controls">
+      Your browser does not support the audio element.
+    </audio>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script>
+    var tag = false;
+
+    $("#openMus").click(function() {
+        var audio = document.getElementById("startMus")
+        if (tag) {
+            audio.pause();
+            tag = false;
+            $("#openMus").attr("src", "./img/nomusic.png")
+        } else {
+            audio.play();
+            tag = true;
+            $("#openMus").attr("src", "./img/openMusic.png")
+        }
+    })
+    $(document).ready(function() {
+        document.getElementById('startMus').play();
+        document.addEventListener('WeixinJSBridgeReady', function() {
+            document.getElementById('startMus').play();
+        })
+    })
+
+    $("#learnRule").click(() => {
+        $("#startRule").show();
+    })
+    $(".startImg").click(() => {
+        $("#startRule").hide();
+    })
+</script>

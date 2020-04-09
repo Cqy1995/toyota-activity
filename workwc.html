@@ -41,6 +41,7 @@
 
 <body>
     <div id="workwc">
+        <embed type="text/html" style="width: 32px;height: 32px;position: fixed;right: 15px;top: 50px;" src="publicautio.html" />
         <img class="workwcImg" src="./img/work.png" alt="" srcset="">
         <div class="workwcBox">
             <div class="workwcBox-a">科室一</div>
@@ -101,7 +102,7 @@
     <script>
         $(function() {
             // 点击显示更多
-            $("#workwcImg").click(function(){
+            $("#workwcImg").click(function() {
                 $(".newBox").show()
             })
             $(".red").slider({
@@ -111,7 +112,7 @@
                 value: 27,
 
             });
-            let analogData = [100, 100, 120, 20, 40, 50,40,75,25,100]; //模拟数据
+            let analogData = [100, 100, 120, 20, 40, 50, 40, 75, 25, 100]; //模拟数据
             $(".red").each(function(index, element) {
                 $(this).slider("value", analogData[index]);
                 if (analogData[index] < 80) {
