@@ -3,7 +3,7 @@ var mySwiper = new Swiper('.swiper-container', {
     mousewheelControl: true,
     onSlideChangeEnd: function(swiper) {
         clearskip();
-        if (swiper.activeIndex == 0 || swiper.activeIndex == 1 || swiper.activeIndex == 2 || swiper.activeIndex == 3|| swiper.activeIndex == 4) {
+        if (swiper.activeIndex == 0 || swiper.activeIndex == 1 || swiper.activeIndex == 2 || swiper.activeIndex == 3 || swiper.activeIndex == 4) {
             $("#skip").show();
             watch20s();
         } else {
@@ -134,6 +134,11 @@ $(".videoButton").click(function() {
     mySwiper.slideTo(4);
 });
 /*调查问卷*/
+$("#dcwj .dcwjBoxMain-b label").click(function() {
+
+})
+
+
 $("#dcwjBtn").click(function() {
         let wantdata = []
         $("input:radio:checked").each(function(index, item) {
@@ -144,18 +149,62 @@ $("#dcwjBtn").click(function() {
             }
             wantdata.push(itemdata)
         });
-            console.log(wantdata);
         mySwiper.slideTo(5);
     })
     /*课后作业*/
+var myTip1 = {
+    title: "提示",
+    msg: "输入值不能为空",
+    button: {
+        ok: "是",
+        // "cancle": "否",
+        okEvent: function() {
+            // alert("点击ok");
+        },
+        cancleEvent: function() {
+            // alert("点击cancle");
+        }
+    }
+};
+var myTip2 = {
+    title: "提示",
+    msg: "输入值不能小于10",
+    button: {
+        ok: "是",
+        // "cancle": "否",
+        okEvent: function() {
+            // alert("点击ok");
+        },
+        cancleEvent: function() {
+            // alert("点击cancle");
+        }
+    }
+};
+var myTip3 = {
+    title: "提示",
+    msg: "输入值不能大于100",
+    button: {
+        ok: "是",
+        // "cancle": "否",
+        okEvent: function() {
+            // alert("点击ok");
+        },
+        cancleEvent: function() {
+            // alert("点击cancle");
+        }
+    }
+};
 $("#khworkBtn").click(function() {
     let khworkVal = $("#khworkBox").val();
     if (khworkVal.length == 0) {
-        alert("输入值不能为空")
+        // alert("输入值不能为空")
+        MyAlert(myTip1);
     } else if (khworkVal.length < 10) {
-        alert("输入值不能小于10")
+        // alert("输入值不能小于10")
+        MyAlert(myTip2);
     } else if (khworkVal.length > 100) {
-        alert("输入值不能大于100")
+        // alert("输入值不能大于100")
+        MyAlert(myTip3);
     } else {
         window.location.href = "./bill.html?" + encodeURI(khworkVal);
     }

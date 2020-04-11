@@ -14,7 +14,7 @@
         body {
             overflow: hidden;
         }
-
+        
         .red {
             float: left;
             width: 4.7rem;
@@ -23,16 +23,16 @@
             background: #0e4547;
             overflow: hidden;
         }
-
+        
         .red .ui-slider-handle {
             width: 4.7rem;
             height: 0.18rem;
         }
-
+        
         .red .ui-slider-range {
             background: #fce204;
         }
-
+        
         .red .ui-slider-handle {
             border-color: #fce204;
         }
@@ -41,56 +41,57 @@
 
 <body>
     <div id="workwc">
+        <embed type="text/html" style="width: 32px;height: 32px;position: fixed;right: 15px;top: 50px;" src="publicautio.html" />
         <img class="workwcImg" src="./img/work.png" alt="" srcset="">
         <div class="workwcList">
             <div class="workwcBox">
                 <div class="workwcBox-a">科室一</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室二</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室三</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室四</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室五</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室六</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室七</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室八</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室九</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室十</div>
-                <div class="red"></div>
+                <div class="red" disabled></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
         </div>
@@ -99,12 +100,16 @@
 
     </div>
     <script>
-        $(function () {
+        $(function() {
             // 点击显示更多
-            $("#workwcImg").click(function () {
+            $("#workwcImg").click(function() {
                 $(".newBox").show()
-                $(this).css({ 'margin-top': "3.5rem" });
-                $("#startWork").css({ 'margin-top': '1.8rem' })
+                $(this).css({
+                    'margin-top': "3.5rem"
+                });
+                $("#startWork").css({
+                    'margin-top': '1.8rem'
+                })
             })
             $(".red").slider({
                 orientation: "horizontal",
@@ -114,7 +119,7 @@
 
             });
             let analogData = [100, 100, 120, 20, 40, 50, 40, 75, 25, 100]; //模拟数据
-            $(".red").each(function (index, element) {
+            $(".red").each(function(index, element) {
                 $(this).slider("value", analogData[index]);
                 if (analogData[index] < 80) {
                     $(this).children(".ui-slider-range").css({
@@ -122,7 +127,7 @@
                     })
                 }
             });
-            $("#startWork").click(function () {
+            $("#startWork").click(function() {
                 window.location.href = "./summary.html";
             })
         });

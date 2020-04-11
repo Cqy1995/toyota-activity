@@ -97,8 +97,13 @@ html {
 }
 
 input,
-select {
+select,
+textarea {
     outline: none;
+}
+
+textarea {
+    resize: none
 }
 
 .ui-page {
@@ -111,4 +116,41 @@ select {
 
 select::-ms-expand {
     display: none;
+}
+
+.alertDisable {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1000;
+    margin-left: -3.28rem;
+}
+
+.alertHeader {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.alertBox {
+    height: 4.45rem!important;
+}
+
+.alertContent {
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
+    line-height: 0 !important;
+}
+
+.alertFooter {
+    margin-top: 0.8rem;
+}
+
+.alertOK {
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
+    color: #333333!important;
+    font-weight: 500;
+    text-decoration: none!important
 }

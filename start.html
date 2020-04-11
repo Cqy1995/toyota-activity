@@ -11,11 +11,7 @@
 
 <body>
     <div id="start">
-        <img class="startAudLogo" src="./img/openMusic.png" alt="" id="openMus" srcset="">
-        <audio class="startAud" id="startMus" src="./video/音乐1.mp3" autoplay="autoplay" controls="controls">
-            Your browser does not support the audio element.
-        </audio>
-        <!-- <audio height="50" width="100" src="https://www.runoob.com/try/demo_source/horse.mp3"></audio> -->
+        <embed type="text/html" style="width: 32px;height: 32px;position: fixed;right: 15px;top: 50px;" src="publicautio.html" />
         <img class="startBigImg" src="./img/startimg.png" alt="" srcset="">
         <div id="startBox">
             <button class="startBtn" id="learnRule">学习规则</button>
@@ -62,27 +58,6 @@
 
 </html>
 <script>
-    var tag = false;
-
-    $("#openMus").click(function () {
-        var audio = document.getElementById("startMus")
-        if (tag) {
-            audio.pause();
-            tag = false;
-            $("#openMus").attr("src", "./img/nomusic.png")
-        } else {
-            audio.play();
-            tag = true;
-            $("#openMus").attr("src", "./img/openMusic.png")
-        }
-    })
-    window.onload = function () {
-        var audio = document.getElementById("startMus")
-        // audio.play()
-        console.log(audio);
-
-    }
-
     $("#learnRule").click(() => {
         $("#startRule").show();
     })
