@@ -11,7 +11,7 @@
 
 <body>
     <div id="start">
-        <embed type="text/html" style="width: 32px;height: 32px;position: fixed;right: 15px;top: 50px;" src="publicautio.html" />
+        <embed type="text/html" style="width: 32px;height: 32px;position: fixed;left: 15px;top: 50px;" src="publicautio.html" />
         <img class="startBigImg" src="./img/startimg.png" alt="" srcset="">
         <div id="startBox">
             <button class="startBtn" id="learnRule">学习规则</button>
@@ -67,4 +67,10 @@
     $("#inclass").click(() => {
         window.location.href = "./form.html";
     })
+    document.body.addEventListener('touchmove', function(e) {
+        e.preventDefault(); //阻止默认的处理方式(阻止下拉滑动的效果)
+    }, {
+        passive: false
+    });
+    
 </script>

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>一汽丰田</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -14,7 +15,7 @@
         body {
             overflow: hidden;
         }
-        
+
         .red {
             float: left;
             width: 4.7rem;
@@ -23,75 +24,93 @@
             background: #0e4547;
             overflow: hidden;
         }
-        
+
         .red .ui-slider-handle {
             width: 4.7rem;
             height: 0.18rem;
         }
-        
+
         .red .ui-slider-range {
             background: #fce204;
         }
-        
+
         .red .ui-slider-handle {
             border-color: #fce204;
+        }
+
+        #progressbar1,#progressbar2,#progressbar3,#progressbar4,#progressbar5,
+        #progressbar6,#progressbar7,#progressbar8,#progressbar9,#progressbar10 {
+            float: left;
+            width: 4.7rem;
+            height: 0.18rem;
+            margin: 0.15rem;
+            background: #0e4547;
+            overflow: hidden;
+        }
+
+        #progressbar1 .ui-widget-header,#progressbar2 .ui-widget-header,#progressbar3 .ui-widget-header,
+        #progressbar4 .ui-widget-header,#progressbar5 .ui-widget-header,#progressbar6 .ui-widget-header,
+        #progressbar7 .ui-widget-header,#progressbar8 .ui-widget-header,#progressbar9 .ui-widget-header,
+        #progressbar10 .ui-widget-header{
+            background: #fce204 !important;
         }
     </style>
 </head>
 
 <body>
     <div id="workwc">
-        <embed type="text/html" style="width: 32px;height: 32px;position: fixed;right: 15px;top: 50px;" src="publicautio.html" />
+        <embed type="text/html" style="width: 32px;height: 32px;position: fixed;left: 15px;top: 50px;"
+            src="publicautio.html" />
         <img class="workwcImg" src="./img/work.png" alt="" srcset="">
         <div class="workwcList">
             <div class="workwcBox">
                 <div class="workwcBox-a">科室一</div>
-                <div class="red" disabled></div>
+                <div id="progressbar1"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室二</div>
-                <div class="red" disabled></div>
+                <div id="progressbar2"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室三</div>
-                <div class="red" disabled></div>
+                <div id="progressbar3"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室四</div>
-                <div class="red" disabled></div>
+                <div id="progressbar4"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室五</div>
-                <div class="red" disabled></div>
+                <div id="progressbar5"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室六</div>
-                <div class="red" disabled></div>
+                <div id="progressbar6"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室七</div>
-                <div class="red" disabled></div>
+                <div id="progressbar7"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室八</div>
-                <div class="red" disabled></div>
+                <div id="progressbar8"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室九</div>
-                <div class="red" disabled></div>
+                <div id="progressbar9"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
             <div class="workwcBox">
                 <div class="workwcBox-a">科室十</div>
-                <div class="red" disabled></div>
+                <div id="progressbar10"></div>
                 <div class="workwcBox-b">10/10</div>
             </div>
         </div>
@@ -100,9 +119,9 @@
 
     </div>
     <script>
-        $(function() {
+        $(function () {
             // 点击显示更多
-            $("#workwcImg").click(function() {
+            $("#workwcImg").click(function () {
                 $(".newBox").show()
                 $(this).css({
                     'margin-top': "3.5rem"
@@ -115,11 +134,10 @@
                 orientation: "horizontal",
                 range: "min",
                 max: 255,
-                value: 27,
-
+                value: 27
             });
             let analogData = [100, 100, 120, 20, 40, 50, 40, 75, 25, 100]; //模拟数据
-            $(".red").each(function(index, element) {
+            $(".red").each(function (index, element) {
                 $(this).slider("value", analogData[index]);
                 if (analogData[index] < 80) {
                     $(this).children(".ui-slider-range").css({
@@ -127,10 +145,41 @@
                     })
                 }
             });
-            $("#startWork").click(function() {
+            $("#startWork").click(function () {
                 window.location.href = "./summary.html";
             })
+            $("#progressbar1").progressbar({
+                value: 100
+            });
+            $("#progressbar2").progressbar({
+                value: 100
+            });
+            $("#progressbar3").progressbar({
+                value: 90
+            });
+            $("#progressbar4").progressbar({
+                value: 80
+            });
+            $("#progressbar5").progressbar({
+                value: 70
+            });
+            $("#progressbar6").progressbar({
+                value: 60
+            });
+            $("#progressbar7").progressbar({
+                value: 50
+            });
+            $("#progressbar8").progressbar({
+                value: 40
+            });
+            $("#progressbar9").progressbar({
+                value: 30
+            });
+            $("#progressbar10").progressbar({
+                value: 20
+            });
         });
+
     </script>
 </body>
 

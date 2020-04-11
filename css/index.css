@@ -332,6 +332,7 @@
 
 .workwcImg {
     display: block;
+    width: 5.4rem;
     margin: 1.7rem auto;
     margin-bottom: 0.5rem;
 }
@@ -362,6 +363,7 @@
     height: 0.24rem;
     margin: 0 auto;
     margin-bottom: 0.4rem;
+    margin-top: 0.7rem;
     animation: flicker 1s;
     animation-iteration-count: infinite;
     position: absolute;
@@ -397,7 +399,7 @@
 }
 
 #startWork {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 
@@ -522,7 +524,6 @@
 }
 
 #todownBox {
-    margin-top: 0.75rem;
     text-align: center;
 }
 
@@ -547,7 +548,7 @@
     width: 6.35rem;
     margin: 0 auto;
     margin-top: 1.7rem;
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.3rem;
 }
 
 .curaudioBox {
@@ -688,11 +689,11 @@
 }
 
 #my-video {
-    width: 6rem;
     height: 3rem;
-    padding: 0.4rem 0.5rem;
-    background: url("../img/videoimg.jpg") no-repeat;
+    padding: 0.4rem 0rem;
+    background: url(../img/videoimg.jpg) no-repeat;
     background-size: 100%;
+    text-align: center;
 }
 
 
@@ -975,32 +976,28 @@
 
 .slideTwo {
     width: 100%;
-    height: 139rem;
+    height: 135rem;
     background: url(../img/dk\ \(2\).png) no-repeat;
     background-size: 100%;
-    margin-top: -3.2rem;
 }
 
 .czTwo {
     width: 100%;
-    height: 50rem;
+    height: 46rem;
     background: url(../img/dk\ \(3\).png) no-repeat;
     background-size: 100%;
-    margin-top: -3.2rem;
 }
 
 .jyTwo {
     width: 100%;
-    height: 50rem;
+    height: 46rem;
     background: url(../img/dk\ \(4\).png) no-repeat;
     background-size: 100%;
-    margin-top: -3.2rem;
 }
 
 .dkTwo {
     width: 100%;
-    height: 55rem;
+    height: 60rem;
     background: url(../img/dk\ \(1\).png) no-repeat;
-    background-size: 100%;
-    margin-top: -3rem;
+    background-size: 100% 100%;
 }

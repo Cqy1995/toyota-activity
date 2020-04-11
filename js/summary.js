@@ -36,10 +36,10 @@ function clearskip() {
     $('.swiper-container').removeClass("swiper-no-swiping");
     clearInterval(intervalid);
 }
-$("#skip").click(function() {
-    $(this).hide();
-    clearskip();
-});
+// $("#skip").click(function() {
+//     $(this).hide();
+//     clearskip();
+// });
 /*暖心视频*/
 //设置中文
 videojs.addLanguage('zh-CN', {
