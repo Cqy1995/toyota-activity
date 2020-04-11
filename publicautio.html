@@ -20,12 +20,15 @@
             $("#openMus").attr("src", "./img/openMusic.png")
         }
     })
-    $(document).ready(function() {
-        document.getElementById('startMus').play();
-        document.addEventListener('WeixinJSBridgeReady', function() {
-            document.getElementById('startMus').play();
-        })
-    })
+
+    function audioAutoPlay(id) {
+        var audio1 = document.getElementById(id);
+        audio1.play();
+        document.addEventListener("WeixinJSBridgeReady", function() {
+            audio1.play();
+        }, false);
+    }
+    audioAutoPlay('startMus');
 
     $("#learnRule").click(() => {
         $("#startRule").show();
