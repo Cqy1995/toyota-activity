@@ -11,7 +11,8 @@
 <body style="overflow: hidden;">
     <div id="formList">
         <!-- <h2>所在班级</h2> -->
-        <embed type="text/html" style="width: 32px;height: 32px;position: fixed;left: 15px;top: 50px;" src="publicautio.html" />
+        <embed type="text/html" style="width: 32px;height: 32px;position: fixed;left: 15px;top: 50px;"
+            src="publicautio.html" />
         <img src="./img/oldclass.png" alt="" srcset="">
         <div class="formListBox">
             <label>部门:</label>
@@ -39,10 +40,26 @@
     </div>
 </body>
 <script src="./js/jquery.min.js"></script>
-
-</html>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="./js/myAlert.js"></script>
 <script>
     $(".formBtn").click(() => {
+        var myTip5 = {
+            title: "提示",
+            msg: "输入值不能为空",
+            button: {
+                ok: "是",
+                // "cancle": "否",
+                okEvent: function () {
+                    // alert("点击ok");
+                },
+                cancleEvent: function () {
+                    // alert("点击cancle");
+                }
+            }
+        };
+        MyAlert(myTip5);
+        return
         let department = $("[name='department']").val();
         let adminisactive = $("[name='adminisactive']").val();
         let jobNumber = $("[name='jobNumber']").val();
@@ -54,3 +71,4 @@
         window.location.href = "./workwc.html";
     })
 </script>
+</html>

@@ -354,6 +354,7 @@
     font-size: 0.28rem;
     color: #ffffff;
     margin-bottom: 0.4rem;
+    width: 0.95rem;
 }
 
 #workwcImg {
@@ -688,7 +689,7 @@
     overflow: hidden;
 }
 
-#my-video {
+#my-video,#my-video1 {
     height: 3rem;
     padding: 0.4rem 0rem;
     background: url(../img/videoimg.jpg) no-repeat;
@@ -960,6 +961,10 @@
     /* width: 100%; */
     height: 100%;
 }
+#my-video1_html5_api {
+    /* width: 100%; */
+    height: 100%;
+}
 
 .newBox {
     display: none;
@@ -986,6 +991,7 @@
     height: 46rem;
     background: url(../img/dk\ \(3\).png) no-repeat;
     background-size: 100%;
+    background-position-y: bottom;
 }
 
 .jyTwo {
@@ -993,6 +999,7 @@
     height: 46rem;
     background: url(../img/dk\ \(4\).png) no-repeat;
     background-size: 100%;
+    background-position-y: bottom;
 }
 
 .dkTwo {

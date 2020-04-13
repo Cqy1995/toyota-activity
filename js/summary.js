@@ -16,9 +16,7 @@ var intervalid;
 function watch20s() {
     $('.swiper-container').addClass("swiper-no-swiping");
     var i = 20;
-
     intervalid = setInterval(fun, 1000);
-
     function fun() {
         let timeBox = $("#time")
         if (i == 0) {
@@ -130,6 +128,11 @@ videojs("my-video").ready(function() {
     var myPlayer = this;
     myPlayer.play();
 });
+var myPlayer = videojs('my-video1');
+videojs("my-video1").ready(function() {
+    var myPlayer = this;
+    myPlayer.play();
+});
 $(".videoButton").click(function() {
     mySwiper.slideTo(4);
 });
@@ -141,6 +144,7 @@ $("#dcwj .dcwjBoxMain-b label").click(function() {
 
 $("#dcwjBtn").click(function() {
         let wantdata = []
+        
         $("input:radio:checked").each(function(index, item) {
             //操作
             let name = item.name
@@ -149,6 +153,7 @@ $("#dcwjBtn").click(function() {
             }
             wantdata.push(itemdata)
         });
+        console.log(wantdata);
         mySwiper.slideTo(5);
     })
     /*课后作业*/

@@ -156,7 +156,9 @@
                 <hr />
                 <div class="billBox">
                     <div class="billBoxTop">
-                        <img src="./img/billact.png" alt="">
+                        <!-- <img src="./img/billact.png" alt=""> -->
+                <img class="billImg" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586712475348&di=029b10a0b67ed03230e0f3fc544430f2&imgtype=0&src=http%3A%2F%2Fimg.bqatj.com%2Fimg%2Fec994e50beffe24e.jpg" alt="">
+
                         <span>微信名称</span>
                     </div>
                     <p id="biiText"></p>
@@ -210,6 +212,7 @@
         console.log('test');
         html2canvas(document.getElementById('view'), {
             canvas: canvas,
+            useCORS: true,
             onrendered: function(canvas) {
                 document.body.appendChild(canvas);
                 callback()
